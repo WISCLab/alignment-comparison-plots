@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "alignment-comparison-plots"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "praat-textgrids>=1.4.0",
+    "pyqt6>=6.10.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/alignment_comparison_plots"]
