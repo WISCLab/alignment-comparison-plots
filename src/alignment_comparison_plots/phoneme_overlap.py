@@ -749,18 +749,3 @@ def plot_phoneme_pair_scatter(
         sys.exit(app.exec())
 
     return window
-
-
-if __name__ == "__main__":
-    import glob
-
-    paths_a = glob.glob("/Users/beckettfrey/.voxkit/datasets/20260309_112659_635447/alignments/20260309_113352_456426/textgrids/cache/*/*.TextGrid")
-    paths_b = glob.glob("/Users/beckettfrey/.voxkit/datasets/20260309_112659_635447/alignments/20260309_133107_862769/textgrids/cache/*/*.TextGrid")
-
-    plot_phoneme_overlap(
-        paths_a=paths_a,
-        paths_b=paths_b,
-        label_a="W2TG Reference",
-        label_b="MFA Hypothesis",
-        aggregate_emphasis=True,
-    )
