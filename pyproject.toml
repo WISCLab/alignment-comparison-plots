@@ -5,8 +5,8 @@ build-backend = "hatchling.build"
 [project]
 name = "alignment-comparison-plots"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+description = "Qt-based forced-alignment comparision plot utils for Praat TextGrid corpora."
+readme = "README_PYPI.md"
 requires-python = ">=3.11"
 dependencies = [
     "matplotlib>=3.10.8",
@@ -16,3 +16,20 @@ dependencies = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/alignment_comparison_plots"]
+
+[tool.mypy]
+python_version = "3.11"
+disable_error_code = ["import-untyped"]
+
+[[tool.mypy.overrides]]
+module = ["IPython", "IPython.*"]
+ignore_missing_imports = true
+
+[dependency-groups]
+dev = [
+    "mkdocs>=1.6.1",
+    "mkdocs-glightbox>=0.5.2",
+    "mkdocs-material>=9.7.5",
+    "mypy>=1.19.1",
+    "pytest>=9.0.2",
+]
