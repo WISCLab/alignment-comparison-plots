@@ -21,6 +21,10 @@ packages = ["src/alignment_comparison_plots"]
 python_version = "3.11"
 disable_error_code = ["import-untyped"]
 
+[[tool.mypy.overrides]]
+module = ["IPython", "IPython.*"]
+ignore_missing_imports = true
+
 [dependency-groups]
 dev = [
     "mkdocs>=1.6.1",
