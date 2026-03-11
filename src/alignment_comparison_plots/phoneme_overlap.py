@@ -341,7 +341,7 @@ def plot_phoneme_overlap(
     """
     overlap = compute_phoneme_overlap(paths_a, paths_b, tier_name, normalize=aggregate_emphasis)
 
-    if save_png is not None and exec_ and QApplication.instance() is None:
+    if save_png is not None and QApplication.instance() is None:
         import os
         os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
@@ -541,7 +541,7 @@ def plot_phoneme_overlap_rate(
         paths_a, paths_b, tier_name, normalize=aggregate_emphasis, threshold=threshold,
     )
 
-    if save_png is not None and exec_ and QApplication.instance() is None:
+    if save_png is not None and QApplication.instance() is None:
         import os
         os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
@@ -730,7 +730,7 @@ def plot_phoneme_pair_scatter(
     """
     pairs = compute_phoneme_pair_overlap(paths_a, paths_b, tier_name, normalize=aggregate_emphasis)
 
-    if save_png is not None and exec_ and QApplication.instance() is None:
+    if save_png is not None and QApplication.instance() is None:
         import os
         os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 

@@ -257,7 +257,7 @@ def plot_phoneme_counts(
     counts_a = count_phonemes(paths_a, tier_name, normalize=aggregate_emphasis)
     counts_b = count_phonemes(paths_b, tier_name, normalize=aggregate_emphasis)
 
-    if save_png is not None and exec_ and QApplication.instance() is None:
+    if save_png is not None and QApplication.instance() is None:
         import os
         os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
