@@ -27,3 +27,11 @@ env/
 # Distribution
 *.whl
 *.tar.gz
+
+# CI
+.mypy_cache/
+.pytest_cache/
+
+# Generated docs
+site/
+docs/contributing/contributing.md

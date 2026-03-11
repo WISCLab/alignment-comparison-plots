@@ -10,6 +10,8 @@ Qt-based forced-alignment comparision plot utils for Praat TextGrid corpora.
 
 ```bash
 pip install alignment-comparison-plots
+# or
+uv add alignment-comparison-plots
 ```
 
 Requires Python ≥ 3.11.
