@@ -1,0 +1,23 @@
+site_name: alignment-comparison-plots
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: red
+    accent: red
+
+markdown_extensions:
+  - admonition
+
+plugins:
+  - search
+  - glightbox
+
+nav:
+  - Home: index.md
+  - API:
+    - Shared parameters: api/shared.md
+    - plot_phoneme_counts: api/phoneme_counts.md
+    - plot_phoneme_overlap: api/phoneme_overlap.md
+    - plot_phoneme_overlap_rate: api/phoneme_overlap_rate.md
+    - plot_phoneme_pair_scatter: api/phoneme_pair_scatter.md
