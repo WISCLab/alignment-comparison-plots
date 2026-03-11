@@ -5,7 +5,7 @@
 [![WiscLab](https://img.shields.io/badge/WiscLab-kidspeech.wisc.edu-c5050c)](https://kidspeech.wisc.edu/)
 [![CI](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/ci.yml/badge.svg)](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/ci.yml) [![CD](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/cd.yml/badge.svg)](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/cd.yml)
 
-Qt-based forced-alignment comparison plot utils for Praat TextGrid corpora.
+When two forced aligners (e.g. MFA and Wav2TextGrid) produce different `.TextGrid` files for the same audio, it can be hard to know where and how they disagree. This package provides ready-made Qt charts that let you visually audit alignment quality and inter-aligner agreement across an entire corpus in seconds:
 
 > [!NOTE]
 > The analyses implemented here were originally developed in R by [@tjmahr](https://github.com/tjmahr). This package adapts his work for Python.

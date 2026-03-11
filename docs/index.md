@@ -1,6 +1,6 @@
 # alignment-comparison-plots
 
-Qt-based forced-alignment comparison plot utils for Praat TextGrid corpora.
+Interactive phoneme-level plots for comparing forced-alignment outputs across Praat TextGrid corpora.
 
 Point it at two sets of TextGrid files and get interactive charts that answer:
 

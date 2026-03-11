@@ -1,11 +1,11 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
 name = "alignment-comparison-plots"
-version = "0.1.0"
-description = "Qt-based forced-alignment comparision plot utils for Praat TextGrid corpora."
+dynamic = ["version"]
+description = "Interactive phoneme-level plots for comparing forced-alignment outputs across Praat TextGrid corpora."
 readme = "README_PYPI.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -13,6 +13,9 @@ dependencies = [
     "praat-textgrids>=1.4.0",
     "pyqt6>=6.10.2",
 ]
+
+[tool.hatch.version]
+source = "vcs"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/alignment_comparison_plots"]
