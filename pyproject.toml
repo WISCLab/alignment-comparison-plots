@@ -5,8 +5,8 @@ build-backend = "hatchling.build"
 [project]
 name = "alignment-comparison-plots"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+description = "Qt-based forced-alignment evaluation toolkit for Praat TextGrid corpora."
+readme = "README_PYPI.md"
 requires-python = ">=3.11"
 dependencies = [
     "matplotlib>=3.10.8",
