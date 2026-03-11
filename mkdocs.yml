@@ -6,6 +6,10 @@ theme:
     primary: red
     accent: red
 
+validation:
+  links:
+    not_found: ignore
+
 markdown_extensions:
   - admonition
 
@@ -21,3 +25,6 @@ nav:
     - plot_phoneme_overlap: api/phoneme_overlap.md
     - plot_phoneme_overlap_rate: api/phoneme_overlap_rate.md
     - plot_phoneme_pair_scatter: api/phoneme_pair_scatter.md
+  - Devops:
+    - Contributing: devops/contributing.md
+    - CI / CD: devops/ci-cd.md

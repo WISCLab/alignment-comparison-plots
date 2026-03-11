@@ -20,4 +20,4 @@ plot_phoneme_counts(
 )
 ```
 
-See [Shared parameters](shared.md) for all common parameters.
+Implements [`PlotFunction`](shared.md#plotfunction).

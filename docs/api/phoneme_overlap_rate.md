@@ -21,10 +21,4 @@ plot_phoneme_overlap_rate(
 )
 ```
 
-See [Shared parameters](shared.md) for all common parameters.
-
-## Additional parameters
-
-| Parameter | Type | Default | Description |
-|---|---|---|---|
-| `threshold` | `float` | `0.5` | Minimum IoU for a match to count as successful. Raise to tighten the criterion. |
+Implements [`PlotFunctionWithThreshold`](shared.md#plotfunctionwiththreshold).

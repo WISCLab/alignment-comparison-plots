@@ -1,6 +1,6 @@
 # alignment-comparison-plots
 
-Qt-based forced-alignment comparision plot utils for Praat TextGrid corpora.
+Qt-based forced-alignment comparison plot utils for Praat TextGrid corpora.
 
 Point it at two sets of TextGrid files and get interactive charts that answer:
 
@@ -20,6 +20,8 @@ Created as part of research at [WiscLab](https://kidspeech.wisc.edu/). The analy
 
 ```bash
 pip install alignment-comparison-plots
+# or
+uv add alignment-comparison-plots
 ```
 
 Requires Python ≥ 3.11.

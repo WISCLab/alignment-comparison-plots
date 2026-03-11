@@ -1,23 +1,13 @@
 # Shared parameters
 
-All four plot functions accept the same core parameters.
+All plot functions implement one of the protocols defined in
+[`src/alignment_comparison_plots/_types.py`](https://github.com/WiscLab/alignment-comparison-plots/blob/main/src/alignment_comparison_plots/_types.py) — the authoritative source for parameter names, types, and defaults.
 
+---
 
-```python
-import glob
-from alignment_comparison_plots import plot_phoneme_counts  # or any other function
+## `PlotFunction`
 
-paths_a = glob.glob("/path/to/alignment_a/**/*.TextGrid", recursive=True)
-paths_b = glob.glob("/path/to/alignment_b/**/*.TextGrid", recursive=True)
-
-plot_phoneme_counts(
-    paths_a=paths_a,
-    paths_b=paths_b,
-    label_a="W2TG Reference",
-    label_b="MFA Hypothesis",
-    aggregate_emphasis=True,
-)
-```
+Base interface.
 
 | Parameter | Type | Default | Description |
 |---|---|---|---|
@@ -31,3 +21,14 @@ plot_phoneme_counts(
 | `save_png` | `str \| None` | `None` | Save the chart to this file path instead of (or before) displaying it |
 | `exec_` | `bool` | `True` | When `True`, starts the Qt event loop and blocks until the window is closed — the normal behaviour for standalone scripts. Set to `False` when embedding the returned `QMainWindow` inside an existing PyQt6 application or when only saving to PNG. |
 
+---
+
+## `PlotFunctionWithThreshold`
+
+Extends `PlotFunction` with one additional parameter.
+
+Includes all parameters from `PlotFunction`, plus:
+
+| Parameter | Type | Default | Description |
+|---|---|---|---|
+| `threshold` | `float` | `0.5` | Minimum IoU for a match to count as successful. Raise to tighten the criterion. |

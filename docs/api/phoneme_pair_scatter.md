@@ -20,4 +20,4 @@ plot_phoneme_pair_scatter(
 )
 ```
 
-See [Shared parameters](shared.md) for all common parameters.
+Implements [`PlotFunction`](shared.md#plotfunction).

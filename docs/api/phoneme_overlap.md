@@ -20,4 +20,4 @@ plot_phoneme_overlap(
 )
 ```
 
-See [Shared parameters](shared.md) for all common parameters.
+Implements [`PlotFunction`](shared.md#plotfunction).
