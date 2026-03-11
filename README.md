@@ -3,6 +3,9 @@
 A high-level toolkit for visualising and comparing forced-alignment outputs.
 Point it at two sets of Praat TextGrid files and get interactive Qt charts with a single function call.
 
+>[!NOTE]
+The analyses implemented here were originally developed in R by [@tjmahr](https://github.com/tjmahr). This package adapts his work for python (with slight changes for broad applicability).
+
 ## Install
 
 ```bash
