@@ -3,8 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/alignment-comparison-plots)](https://pypi.org/project/alignment-comparison-plots/)
 [![Docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://WISCLab.github.io/alignment-comparison-plots/)
 [![WiscLab](https://img.shields.io/badge/WiscLab-kidspeech.wisc.edu-c5050c)](https://kidspeech.wisc.edu/)
-[![CI](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/ci.yml/badge.svg)](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/ci.yml)
-[![CD](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/cd.yml/badge.svg)](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/cd.yml)
+[![CI](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/ci.yml/badge.svg)](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/ci.yml) [![CD](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/cd.yml/badge.svg)](https://github.com/WiscLab/alignment-comparison-plots/actions/workflows/cd.yml)
 
 Qt-based forced-alignment comparison plot utils for Praat TextGrid corpora.
 
@@ -35,10 +34,13 @@ plot_phoneme_counts(paths_a=paths_a, paths_b=paths_b, label_a="Ref", label_b="Hy
 
 ## Development
 
+See the [Contributing guide](https://WISCLab.github.io/alignment-comparison-plots/devops/contributing/) for instructions on adding new plot functions.
+
 ```bash
 make serve-docs   # local docs preview at http://127.0.0.1:8000
 make build-docs   # build static site into ./site
 make typecheck    # run mypy on the source
+make test         # run protocol conformance tests
 ```
 
 ## License
