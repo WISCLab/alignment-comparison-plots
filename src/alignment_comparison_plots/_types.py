@@ -1,6 +1,9 @@
-from typing import Protocol
+from __future__ import annotations
 
-from PyQt6.QtWidgets import QMainWindow
+from typing import TYPE_CHECKING, Protocol
+
+if TYPE_CHECKING:
+    from PyQt6.QtWidgets import QMainWindow
 
 
 class PlotFunction(Protocol):

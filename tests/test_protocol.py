@@ -38,7 +38,10 @@ PROTOCOLS = _get_protocols()
 PROTOCOL_TYPES = set(_get_protocols())
 
 
-@pytest.mark.parametrize("name", pkg.__all__)
+PLOT_NAMES = [name for name in pkg.__all__ if callable(getattr(pkg, name)) and not inspect.isclass(getattr(pkg, name))]
+
+
+@pytest.mark.parametrize("name", PLOT_NAMES)
 def test_annotated_with_protocol(name: str) -> None:
     annotation = pkg.__annotations__.get(name)
     assert annotation is not None, (
@@ -51,7 +54,7 @@ def test_annotated_with_protocol(name: str) -> None:
     )
 
 
-@pytest.mark.parametrize("name", pkg.__all__)
+@pytest.mark.parametrize("name", PLOT_NAMES)
 def test_matches_at_least_one_protocol(name: str) -> None:
     fn = getattr(pkg, name)
     fn_params = _call_params(fn)
