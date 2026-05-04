@@ -9,7 +9,7 @@ description = "Interactive phoneme-level plots for comparing forced-alignment ou
 readme = "README_PYPI.md"
 requires-python = ">=3.11"
 dependencies = [
-    "matplotlib>=3.10.8",
+    "matplotlib==3.10.6",
     "praat-textgrids>=1.4.0",
     "pyqt6>=6.10.2",
 ]
